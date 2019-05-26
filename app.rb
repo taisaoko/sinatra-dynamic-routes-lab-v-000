@@ -14,7 +14,7 @@ class App < Sinatra::Base
   
   get "/say/:number/:phrase" do
     @number = params[:number].to_i
-    @phrase = params[:phrase]
+    @phrase = params[:phrase]https://learn.co/tracks/full-stack-web-development-v7/sinatra/forms/dynamic-routes-lab#
     
     result = ""
     @number.times {result << @phrase}
